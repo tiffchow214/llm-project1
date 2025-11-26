@@ -1,6 +1,13 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
+
+# Project Specific
+uv.lock
+
+# Byte-compiled / optimized / DLL files (from Python template)
+__pycache__/
+*.py[cod]
 *$py.class
 
 # C extensions
@@ -25,6 +32,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+.chainlit/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -110,12 +118,11 @@ ipython_config.py
 
 # pdm
 #   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#   pdm recommends including project-wide configuration in pdm.toml, but excluding .pdm-python.
-#   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
 #pdm.lock
 #pdm.toml
 .pdm-python
 .pdm-build/
+.pdm.toml
 
 # pixi
 #   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
@@ -205,3 +212,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Vercel
+.vercel
